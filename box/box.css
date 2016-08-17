@@ -1,55 +1,61 @@
-.main-header {
-    width: 100%;
-    height: 75px;
-    background: #ccc;
-    padding: 25px;
-    opacity: 1;
-    display: flex;
-    justify-content: space-between;
+
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display';
+
+
+.header-wrapper {
+  width: 100%auto;
+  height: 65px;
+  background: #ccc;
+  text-align: center;
+
+
+}
+.header-wrapper ul li {
+  font-family: 'Playfair Display', serif;
+  font: 100px;
+  display: none;
+}
+.bottom-margin {
+  margin-bottom: 25px;
 }
 
-.list {
-    display: flex;
+.big {
+width: 100vw;
+height: 200px;
+background: lightblue;
+position: relative;
+
+}
+.square {
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: absolute;
+
+
 }
 
-.box {
-    width: 50%;
-    height:200px;
-    background: #1CEAF4;
-    position: relative;
+.TL {
+  top: 10px;
+  left: 10px;
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
+.BR {
+bottom: 10px;
+right: 10px;
 }
 
-.circle:nth-child(1) {
-    top:10px;
-    left:10px;
+.TR {
+  top: 10px;
+  right: 10px;
 }
 
-.circle:nth-child(2) {
-    top:10px;
-    right:10px;
+.BL {
+bottom: 10px;
+left: 10px;
 }
-
-.circle:nth-child(3) {
-    bottom:10px;
-    left:10px;
+@media(min-width:750px) {
+  .header-wrapper ul li {
+    display: inline-block;
+  }
 }
-
-.circle:nth-child(4) {
-    bottom:10px;
-    right:10px;
-}
-
-.bottom {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
